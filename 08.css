@@ -1,0 +1,694 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    background-color: rgba(238,238,238,0.6);
+    height: 2000px;
+    background-image: url(img/back.png);
+
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+}
+/* 头部 */
+.header{
+    width: 100%;
+    height: 95px;
+}
+/* 咨询部分 */
+.consulting-service{
+    background-color: #282828;
+    height: 35px;
+}
+.contact{
+    height: 35px;
+    line-height: 35px;
+    color: #eee;
+    float: right;
+    margin-right:100px ;
+}
+.contact a:hover{
+    color: #fff;
+}
+/* 导航部分 */
+#navigation{
+    height: 60px;
+    background-color: #eee;
+    z-index: 100;
+}
+#quick{
+    display: none;
+}
+.navigation_push span{
+    background:#000;
+}
+.navigation_push img{
+    margin-right: 50px;
+}
+.nav{
+    background-color: #eee;
+}
+.nav li{
+    margin-left:10px ;
+    margin-right: 5px;
+}
+.nav a{
+    font-size: 18px;
+    color: #000;
+}
+.nav a:hover{
+    color: #cd6b36; 
+}
+.nav li:hover{
+    border-bottom: solid 2px #cb5405;
+}
+/* banner部分 */
+.banner{
+    margin-top: 95px;
+    width: 100%;
+    height: 550px;
+    background: url(img/banner.jpg);
+    background-size: cover;
+}
+.item{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.item h2{
+    color: #eee;
+}
+.item p{
+    color: #eee;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#p1{
+    display: block;
+    width: 260px;
+    border-top: solid 1px #eee;
+}
+#p2{
+    display: block;
+    width: 320px;
+    border-bottom: solid 1px #eee;
+}
+#p3{
+    display: none;
+}
+/* 搜索框 */
+.search{
+    position: absolute;
+    left: 20%;
+    width:60%;
+    border: 3px solid rgba(26, 14, 14, 0.5);
+    border-radius: 5px;
+    bottom: 10%;
+    padding: 0;
+    text-align:center ;
+}
+.first_search{
+    background: #cb5405;
+    border-radius:5px;
+}
+.destination{
+    background-color: #f2f3f7;
+    border:none;
+    width:25%;
+    float: left;
+    height: 45px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search_white{
+    display: inline-block;
+    margin:0 -4px;
+    padding:0;
+    height: 45px;
+    width: 50%;
+    border:none;
+}
+.search_orange{
+    background-color:#cb5405;
+    border:none;
+    width:25%;
+    height: 45px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+/* 车辆接送 */
+.transfer{
+    width: 95%;
+    height: 365px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 30px;
+}
+.transfer_left{
+    position: relative;
+    width: 75%;
+    height:100%;
+    background: url(img/Sbanner2.jpg) no-repeat center;
+    background-size: cover;
+    float: left;
+}
+.transfer_left h2,p{
+    color:rgba(255,255,255,0.9);
+}
+.transfer_left div{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    color: #fff;
+}
+.transfer_right{
+    width: 25%;
+    height: 100%;
+    background: #14316d;
+    float: left;
+    position: relative;
+}
+.transfer_right img{
+    position: absolute;
+    top: 27%;
+    left: 32.5%;
+}
+.transfer_right p{
+    position: absolute;
+    color: #fff;
+    font-size: 26px;
+    top: 58%;
+    left: 32.5%;
+}
+.transfer_right button{
+    position: absolute;
+    width: 70%;
+    height: 15%;
+    border: solid 1px #fff;
+    color: #fff;
+    bottom: 10%;
+    left: 15%;
+    font-size: 24px;
+    border-radius: 10px;
+}
+.transfer_right button:hover{
+    color: #fff;
+}
+#transfer_little{
+    display: none;
+}
+/* 热门线路 */
+.routes{
+    width: 95%;
+    height: 1155px;
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.routes img{
+    width: 100%;
+    height: 100%;
+}
+#generic p span{
+    font-size: 25px;
+}
+.routes_title{
+    height: 135px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.routes_title h2{
+    font-size: 36px;
+}
+.routes_title p{
+    font-size: 18px;
+    color: #000;
+}
+.routes_pictures{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 1020px;
+    padding: 0;
+}
+.picture_left{
+    width: 49.5%;
+    height: 1020px;
+    float: left;
+    font-size: 16px;
+    text-align: left;
+}
+.left_one{
+    width: 100%;
+    background: #000;
+    height: 105px;
+    padding-top: 3%;
+    margin-bottom: 2px;
+
+}
+.left_two{
+    padding-top: 2%;
+    width: 100%;
+    height: 90px;
+    background: #000;
+    
+}
+.picture_right{
+    width: 49.5%;
+    height: 1020px;
+    float: right;
+}
+.picture_left p{
+    color: #fff;
+    margin-left: 40px;
+}
+.right_box{
+    position: relative;
+    padding: 0;
+}
+.right_cover{
+    text-align: left;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 90px;
+    background-color:#000; 
+    opacity: 0.6;
+    bottom: 0;
+    color: #fff;
+    padding-top: 3%;
+    padding-left: 3%;
+}
+#routes_little{
+    display: none;
+}
+/* 使命与愿景 */
+.mission{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.mission_top img{
+    width: 100%;
+    height: 100%;
+}
+.mission_title{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+    height: 265px;  
+    text-align: center;
+}
+.mission_pictures{
+    width: 95%;
+    margin: 0 auto;
+}
+.mission_top{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: stretch;
+    background-size: 250%;
+}
+.top_left{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+#wish2{
+    display: none;
+}
+#wish1{
+    display: block;
+}
+.top_right{
+    width: 60%;
+    height: 100%;
+    padding: 8% 9.5% 8% 9.5%;
+    background: rgba(28,79,127,0.8);
+    color: #fff;
+    float: left;
+    font-size: 18px;
+}
+.top_right h3{
+    text-align: center;
+}
+#top_last{
+    width: 100%;
+}
+.mission_last{
+    display: flex;
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+    background: #1c5080;
+    justify-content:space-around; 
+}
+.last_box{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    height: 100%;
+    padding: 10% 5% 18% 5%;
+}
+.last_box span{
+    font-size: 22px;
+    margin-top: 45%;
+    color: #fff;
+}
+.last_box p{
+    font-size: 12px;
+    color: #fff;
+}
+.img1{
+    position: absolute;
+    top: 10%;
+}
+.img2{
+    position: absolute;
+    top:22%;
+}
+.last_text{
+    width: 200%;
+    position: absolute;
+    text-align: center;
+    margin-top: 70%;
+}
+.last_text p{
+    font-size: 1.25vw;
+    color: #fff;
+}
+/* 底部 */
+.bottom{
+    width: 100%;
+    background: #000;
+}
+.bottom_inner{
+    width: 95%;
+    height: 365px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 3%;
+}
+.bottom_inner ul{
+    list-style: none;
+    font-size: 16px;
+    float: left;
+}
+.inner_ul{
+    width: 100%;
+    height: 25%;
+}
+.ul_title{
+    width: 10%;
+}
+.bottom_ul{
+    width: 90%;
+}
+.bottom_ul li{
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+}
+.bottom a{
+    color: #fff;
+    font-size: 13px;
+}
+footer{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 160px;
+    background: #000;
+    border-top: solid 1px #ddd;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 3%;
+}
+#second_little{
+    display: none;
+}
+#third_little{
+    display: none;
+}
+#fourth_little{
+    display: none;
+}
+#sixth_little{
+    display: none;
+}
+.little_sbox{
+    display: none;
+}
+#copyright span{
+    display: none;
+}
+
+
+
+/* 分辨率变小 */
+@media screen and (max-width:720px){
+    /* 咨询条消失 */
+    .consulting-service{
+        display: none;
+    }
+    /* 快速定制按钮出现 */
+    #quick{
+        display: inline-block;
+        position: absolute;
+        right: 15%;
+        top:10%;
+        width: 15%;
+        height: 80%;
+        background-color: #cb5405;
+        color: #fff;
+        text-align: center;
+    }
+    /* banner部分 */
+    .banner{
+        height: 400px;
+        margin-top: 55px;
+    }
+    #p1{
+        display: none;
+    }
+    #p2{
+        display: none;
+    }
+    #p3{
+        display: block;
+    }
+    /* 搜索框 */
+    .search{
+        position: absolute;
+        left: 5%;
+        width:90%;
+        border: 3px solid rgba(24, 27, 13, 0.5);
+        border-radius: 5px;
+        bottom: 40%;
+        padding: 0;
+    }
+    /* 车辆接送 */
+    .transfer_left{
+        display: none;
+    }
+    .transfer_right{
+        display: none;
+    }
+    .transfer{
+        width: 100%;
+        height: 200px;
+        background: #fff;
+    }
+    #transfer_little{
+        width: 90%;
+        margin: 0 auto;   
+        display: block;
+        padding-top: 8%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    #transfer_little button{
+        font-size: 20px;
+        width: 23%;
+        height: 25%;
+        border: solid 1px #b5b5b5;
+        border-radius: 10px;
+        margin-top: 5%;
+        color: #b5b5b5;
+    }
+    #transfer_little h2{
+        font-size: 28px;
+        color: #1c5080;
+    } 
+    #transfer_little p{
+        font-size: 15px;
+        color: #b5b5b5;
+    } 
+    /* 热门线路 */
+    .routes{
+        margin-top: 20px;
+        width: 100%;
+        background: #fff;
+        height: 1150px;
+    }
+    .routes_title{
+        display: none;
+    }
+    .routes_pictures{
+        display: none;
+    }
+    #routes_little{
+        display: block;
+    }
+    .little_title{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+        padding-top: 10%;
+        border-bottom: 0.5px solid rgba(208, 209, 204, 0.7);
+    }
+    .little_title p{
+        color: #000;
+        font-size: 25px;
+        border-left: solid 3px #e8420a;
+        text-align: left;
+        padding-left: 3%;
+    }
+    .little_cover{
+        text-align: left;
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        height: 90px;
+        background-color:#000; 
+        opacity: 0.7;
+        bottom: 0;
+        color: #fff;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+    .little_cover p{
+        font-size: 20px;
+    }
+    .little_cover div{
+        position: relative;
+        margin-left: 65%;
+        bottom: 100%;
+        font-size: 30px;
+    }
+    .little_button{
+        font-size: 20px;
+        width: 30%;
+        height: 30%;
+        border: solid 1px #b5b5b5;
+        border-radius: 10px;
+        margin-top: 10%;
+        color: #b5b5b5;
+    }
+    /* 使命与愿景 */
+    #mission_little{
+        display: block;
+    }
+    #mission_little span{
+        font-size: 18px;
+    }
+    .mission_title{
+        display: none;
+    }
+
+    .mission_pictures{
+        width: 90%;
+        height: 800px;
+        position: relative;
+    }
+    .top_left{
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 30%;
+    }
+    #wish1{
+        display: none;
+    }
+    #wish2{
+        display: block;
+        text-align: center;
+        line-height: 50px;
+    }
+    .top_right{
+        padding-top: 1%;
+        position: absolute;
+        top: 40%;
+        text-align: left;
+        width: 100%;
+        height: 32%;
+        background: #fff;
+        color: #000;
+    }
+    #top_last{
+        position: absolute;
+        bottom:2%;
+    }
+    .mission_last{
+        display: none;
+    }
+    .little_sbox{
+        display: block;
+        margin-top: 0;
+        background-color: #fff;
+    }
+    .little_sbox h3{
+        padding: 0;
+        text-align: center;
+    }
+    .sbox_ul{
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        height: 185px;
+        border-bottom: 0.5px solid rgba(208, 209, 204, 0.7);
+    }
+    .sbox_icon{
+        position: relative;
+        width: 30%;
+        height: 100%;
+    }
+    .sbox_icon img{
+        position: absolute;
+        left: 30%;
+        top: 30%;
+    }
+    .sbox_letters{
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        font-size: 16px;
+    }
+    .sbox_letters p{
+        color: #000;
+    }
+    /* 底部 */
+    .bottom{
+        display: none;
+    }
+    footer{
+        padding-top: 10%;
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+    #copyright span{
+        display: block;
+    }
+}
